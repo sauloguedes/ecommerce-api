@@ -75,7 +75,7 @@
 
     },
     "include": [
-        "src//*",
+        "src/",
         "./knexfile.ts",
         "server.ts"
     ],

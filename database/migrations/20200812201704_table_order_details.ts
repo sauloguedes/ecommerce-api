@@ -14,7 +14,6 @@ export async function up(knex: Knex): Promise<void> {
 
     })
 
-    await knex.schema.raw('ALTER TABLE orders ADD COLUMN number SERIAL')
 }
 
 export async function down(knex: Knex): Promise<void> {
