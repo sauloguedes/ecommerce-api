@@ -16,7 +16,7 @@ module.exports = {
     migrations: {
         tableName: "migrations",
         extension: 'ts',
-        directory: __dirname + '/database/migrations',
+        directory: __dirname + '/src/database/migrations',
     }
 
 };
