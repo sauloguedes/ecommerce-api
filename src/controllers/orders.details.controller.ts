@@ -3,7 +3,7 @@ import { Request, Response, NextFunction } from "express";
 //
 import { OrderDetailService } from "../services/orders.details.service";
 
-export class OrderController {
+export class OrderDetailController {
 
     private orderDetailsService: OrderDetailService
 

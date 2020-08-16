@@ -3,7 +3,7 @@ import { Request, Response, NextFunction } from "express";
 //
 import { CustomerAddressService } from "../services/customer.addresses.service";
 
-export class CustomerController {
+export class CustomerAddressController {
 
     private customerAddressService: CustomerAddressService
 
