@@ -27,7 +27,7 @@ class App {
     //
     private applyRoutes() {
         // Applying all routers from index file
-        this.app.use(router)
+        this.app.use('/api/v1', router)
     }
 
 }
