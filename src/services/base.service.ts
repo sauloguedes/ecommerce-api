@@ -16,7 +16,7 @@ export abstract class BaseService {
 
     // Return all records
     index(): Promise<any> {
-        return this.service('orders').select()
+        return this.service(this.table).select()
     }
 
     // Return record by id
