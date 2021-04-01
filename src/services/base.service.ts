@@ -21,7 +21,7 @@ export abstract class BaseService {
 
     // Return record by id
     getById(id: string): Promise<any> {
-        return this.service(this.table).where({ id })
+        return this.service(this.table).where({ id }).first()
     }
 
     // Create a new record
@@ -31,7 +31,7 @@ export abstract class BaseService {
 
     // Update existing record
     update(id: string, resource: any) {
-        return this.service(this.table).update(resource).where({ id })
+        return this.service(this.table).update(resource, ['*'][0]).where({ id })
     }
 
     // Delete existing record

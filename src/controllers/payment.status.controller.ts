@@ -30,7 +30,7 @@ export class PaymentStatusController {
     public store(req: Request, res: Response, next: NextFunction) {
 
         this.paymentStatusService.save(req.body).then(data => {
-            res.json(data)
+            res.status(201).json(data)
         }).catch(erro => next(erro))
 
     }
@@ -46,7 +46,7 @@ export class PaymentStatusController {
     public delete(req: Request, res: Response, next: NextFunction) {
 
         this.paymentStatusService.delete(req.params.id).then(data => {
-            res.json(data)
+            res.status(204).json(data)
         }).catch(erro => next(erro))
 
     }

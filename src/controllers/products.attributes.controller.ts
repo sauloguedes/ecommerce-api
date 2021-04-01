@@ -30,7 +30,7 @@ export class ProductAttributeController {
     public store(req: Request, res: Response, next: NextFunction) {
 
         this.productAttributeService.save(req.body).then(data => {
-            res.json(data)
+            res.status(201).json(data)
         }).catch(erro => next(erro))
 
     }
@@ -46,7 +46,7 @@ export class ProductAttributeController {
     public delete(req: Request, res: Response, next: NextFunction) {
 
         this.productAttributeService.delete(req.params.id).then(data => {
-            res.json(data)
+            res.status(204).json(data)
         }).catch(erro => next(erro))
 
     }
